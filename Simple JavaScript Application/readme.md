@@ -12,7 +12,3 @@ There is no one way to complete this exercise as long as the minimum requirement
 4. When a result is clicked, display an alert with the repo's `language`, `followers`, `url` and `description`.
 5. The search term should be cached so duplicate searches do not trigger further requests. 
 6. Solution does not need to support older browsers.
-
-## Credits ##
-
-This exercise is based on one originally written by the smart people at [SlideRoom](https://twitter.com/slideroom).
