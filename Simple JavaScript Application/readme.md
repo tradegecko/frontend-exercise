@@ -6,9 +6,11 @@ There is no one way to complete this exercise as long as the minimum requirement
 
 ## Requirements ##
 
-1. You can only edit app.js, you cannot touch index.html. jQuery is provided.
-2. index.html contains two elements: one for the search term and one for the results.
-3. The results should show as a list with each item in an "owner/name" format.
-4. When a result is clicked, display an alert with the repo's `language`, `followers`, `url` and `description`.
-5. The search term should be cached so duplicate searches do not trigger further requests. 
-6. Solution does not need to support older browsers.
+1. Write your javascript code in app.js
+2. The results should be shown in "owner/name" format
+3. When a result is clicked, show the repo's 'language', 'followers', 'url', and 'description'
+4. Solution does not need to support older browsers, but should work in the latest version of Chrome
+5. jQuery is the only JS library that can be used
+6. Submit your code by creating a pull request
+
+Your app (and code) should be performant and intuitive. Not a lot of effort is required for the UI but it should be reasonably pleasant to look at.
