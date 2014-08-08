@@ -13,3 +13,5 @@ There is no one way to complete this exercise as long as the minimum requirement
 5. Feel free to use any libraries or tools you like.
 
 Your app (and code) should be performant and intuitive. Not a lot of effort is required for the UI but it should be reasonably pleasant to look at.
+
+Any questions, please ask.
