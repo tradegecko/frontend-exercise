@@ -3,12 +3,66 @@
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
   <title>Search</title>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
   <script src="app.js"></script>
-  <style src="app.css"></style>
+
+  <link rel="stylesheet" href="app.css" >
 </head>
+
 <body>
-  <input id="search" type="text"/>
-  <div id="results"></div>
-</body>
+   
+  <div class="container">
+  	 <div class="search-header">
+      <h2><label for="search">Search Github.com repos by keyword</label></h2>
+      <input class="search-input" id="search" type="text" placeholder="Search GitHub.com"/>
+      <button id="search-btn" class="search-btn">Search</button>
+     </div>
+
+     <div id="results">
+
+        <div id="repo-results" class="repo-results">
+     	
+	     	<div id="repo-total"></div>	
+
+	        <ul id="search-result" class="search-result">
+	        </ul>
+
+	        <div class="search-result-paging">
+	             
+	        </div>
+      </div>
+     
+      <div id="repo-details" class="repo-details">
+      	   
+      	   <div id="back-btn"><button class="back-btn">Back</button></div>
+
+           <div><h3>Name: </h3><label class="repo-name"></label></div>
+
+           <div><h3>Language: </h3><label class="repo-lang"></label></div>
+
+           <div><h3>Description: </h3><label class="repo-desc"></label></div>
+           
+           <div><h3>Repo Link: </h3><label class="repo-url"></label></div>
+
+           <div class="repo-follower">
+             <h3>Followers: </h3>
+           	 <ul id="follower-result" class="follower-result">
+           	 </ul>
+          
+           	 <div class="repo-follower-paging">
+           	     
+           	 </div>
+           </div>
+            
+      </div>
+
+  
+     </div>
+
+
+  </div>	
+
+  </body>
 </html>
