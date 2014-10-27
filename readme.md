@@ -14,4 +14,6 @@ There is no one way to complete this exercise as long as the minimum requirement
 
 Your app (and code) should be performant and intuitive. Not a lot of effort is required for the UI but it should be reasonably pleasant to look at.
 
+Your process is just as interesting as the final product, so please do leave a basic git history
+
 Any questions, please ask.
