@@ -1,0 +1,164 @@
+html,body {
+   width:100%;
+   height:100%;	
+   padding:0;
+   margin:0;
+   border:0;
+   font: 13px/1.4 Helvetica, arial, sans-serif;
+}
+.container {
+   min-width: 300px;
+   width:80%;
+   margin: 0 auto;
+}
+.search-header{
+	padding-top:100px;
+	margin-left:20%;
+}
+.search-input{
+	width:80%;
+	max-width: 500px;
+	padding: 7px 8px;
+	font-size: 13px;
+	color: #333;
+	vertical-align: middle;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: right center;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	outline: none;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.075);
+}
+.search-input:hover,.search-input:active,.search-input:focus{
+	outline:none;
+}
+.search-btn, .back-btn{
+position: relative;
+display: inline-block;
+padding: 7px 12px;
+font-size: 13px;
+font-weight: bold;
+color: #333;
+text-shadow: 0 1px 0 rgba(255,255,255,0.9);
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+background-color: #eee;
+background-image: -webkit-linear-gradient(#fcfcfc, #eee);
+background-image: linear-gradient(#fcfcfc, #eee);
+background-repeat: repeat-x;
+border: 1px solid #d5d5d5;
+border-radius: 3px;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-appearance: none;
+}
+#search-btn{
+	min-wdith:75px;
+	max-width: 100px;
+	width:100%;
+}
+.search-result{
+	padding: 0;
+}
+.search-result-item{
+	position: relative;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	list-style: none;
+	border-bottom: 1px solid #eee;
+	color: #4183c4;
+	font-size:16px;
+	cursor: pointer;
+}
+.search-result-item:hover{
+	text-decoration: underline;
+}
+
+.search-result-paging{
+	display:none;
+}
+
+#repo-total{
+	height: 34px;
+	margin-top: 20px;
+	border-bottom: 1px solid #eee;
+    display:none;
+}
+
+.paging-button{
+	position: relative;
+	float: left;
+	margin-left: -1px;
+	font-size: 13px;
+	font-weight: bold;
+	font-style: normal;
+	padding: 7px 12px;
+	color: #333;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.paging-button:hover{
+	background-color: #e7e7e7;
+	border-color: #e5e5e5;
+}
+.current-page {
+    color: #fff;
+	background-color: #4183c4;
+	border-color: #4183c4;
+}
+
+.repo-results {
+	display:none;
+}
+
+.repo-details{
+	margin-top:20px;
+	display:none;
+}
+
+#back-btn{
+	margin-bottom: 20px;
+}
+.follower-result{
+	padding: 0;
+}
+.follower-item{
+	float: left;
+	width: 305px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	border-bottom: 1px solid #eee;
+	list-style: none;
+}
+.user-img{
+	float: left;
+	display: block;
+	width: 75px;
+	height: 75px;
+}
+.user-name{
+	margin-left: 107px;
+	margin-top: 35px;
+	font-size: 16px;
+	color: #4183c4;
+	line-height: 1;
+}
+.repo-follower-paging{
+	clear:both;
+}
