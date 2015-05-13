@@ -1,14 +1,18 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-  <title>Search</title>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script src="app.js"></script>
-  <style src="app.css"></style>
+  <title>Github Repo Search</title>  
+  <link rel="stylesheet" type="text/css" href="app.css">
 </head>
 <body>
-  <input id="search" type="text"/>
+  <center>  
+  <div id="header">
+  <input id="search" class="inputbox" type="text" placeholder="Github Repo Search!"/> 
+  <input id="button" class="button" value="Go!" readonly="readonly" /> 
+  </div>
+  </center>
+  <script type="text/javascript" src="jquery.min.js"></script>  
+  <script type="text/javascript" src="app.js"></script>
   <div id="results"></div>
 </body>
 </html>

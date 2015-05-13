@@ -1,40 +1,26 @@
-/*
-    # Endpoint URL #
+$(document).ready(function() {	
+	$('#button').click(function() {
+		var key = $('#search').val();
+		var searchstring = 'https://api.github.com/legacy/repos/search/'+key;
+		$.get( searchstring, function( data ) {	
+			var numResults = data.repositories.length;		
+			$( "#results" ).empty();
+			for(var count=0;count<numResults;count++){			
+				var resultName = data.repositories[count].username + "/" + data
+				.repositories[count].name;
+				var iLang = "Language: " + data.repositories[count].language + "<br />";
+				var iFol = "Followers: " + data.repositories[count].followers + "<br />";
+				var iUrl = "URL: " + data.repositories[count].url + "<br />";
+				var iDes = "Description: " + data.repositories[count].description + "<br />";
+				$( "#results" ).append("<p class=\"res\">" + resultName + "</p>");
+				$( "#results" ).append("<p class=\"mor\">" + iLang + iFol + iUrl + iDes + "</p>");
+				$('.mor').hide();
+			}
+		});	
+	});		
+	
 
-    https://api.github.com/legacy/repos/search/{query}
-
-    Note: Github imposes a rate limit of 60 request per minute. Documentation can be found at http://developer.github.com/v3/.
-
-    # Example Response JSON #
-
-    {
-      "repositories": [
-        {
-          "created_at": "2014-01-13T02:37:26Z",
-          "description": "A Ruby interface to the TradeGecko API.",
-          "followers": 1,
-          "fork": false,
-          "forks": 2,
-          "has_downloads": true,
-          "has_issues": true,
-          "has_wiki": true,
-          "homepage": null,
-          "language": "Ruby",
-          "name": "gecko",
-          "open_issues": 3,
-          "owner": "tradegecko",
-          "private": false,
-          "pushed": "2014-07-29T08:18:51Z",
-          "pushed_at": "2014-07-29T08:18:51Z",
-          "score": 16.24838,
-          "size": 1617,
-          "type": "repo",
-          "url": "https://github.com/tradegecko/gecko",
-          "username": "tradegecko",
-          "watchers": 1
-        }
-      ]
-    }
-*/
-
-
+	$('body').on('click','p.res',function() {
+		$(this).next().slideToggle(300);
+	});
+});
