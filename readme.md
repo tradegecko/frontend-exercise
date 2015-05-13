@@ -12,7 +12,7 @@ There is no one way to complete this exercise as long as the minimum requirement
 4. Solution does not need to support older browsers, but should work in the latest version of Chrome
 5. Feel free to use any libraries or tools you like.
 
-Your app (and code) should be performant and intuitive. Not a lot of effort is required for the UI but it should be reasonably pleasant to look at.
+Your app (and code) should be performant and the UI/UX should be intuitive. Not a lot of effort is required for the UI design but it should be reasonably pleasant to look at.
 
 Your process is just as interesting as the final product, so please do leave a basic git history
 
