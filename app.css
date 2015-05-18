@@ -120,16 +120,8 @@ h1 {
 .result-list > li.loader img{
     margin: 15px auto 0px;
 }
-.fade {
-    opacity: 0;
-    -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    -ms-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-}
-.fade.in {
-    opacity: 1;
+.not-found {
+    text-align: center;
 }
 /*Form*/
 
@@ -153,6 +145,20 @@ ul.list-inline {
 ul.list-inline > li{
     display: inline-block;
     margin-right: 20px;
+}
+
+/*Others*/
+
+.fade {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+.fade.in {
+    opacity: 1;
 }
 
 /*Media queries*/

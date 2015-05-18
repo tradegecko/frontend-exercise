@@ -117,7 +117,10 @@
             });
         },
         renderList : function (data) {
-            console.log(data);
+            if(data.repositories.length == 0 ) {
+                this.setToNoResultFoundMode();
+                return;
+            }
             var cleanData = data.repositories.map(function (repository) {
                 return {
                     name : repository.name,
@@ -144,6 +147,9 @@
             setTimeout(function () {
                 $(self.loaderTemplate.target).find('.fade').addClass('in');
             },100);
+        },
+        setToNoResultFoundMode : function () {
+            $('#result-list').html('<p class="not-found">Sorry, No Results Found. Please try another keywords.</p>');
         }
     }
 
@@ -160,7 +166,6 @@
 
             resultList.setToLoadingMode();
             App.api.searchRepoByName($searchInput.val()).then(function(data){
-                console.log(data);
                 resultList.renderList(data);
             });
         });
